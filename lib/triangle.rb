@@ -1,6 +1,7 @@
 class Triangle
   
   
+  
 def initialize(side_one, side_two, side_three)
   @side_one = side_one
   @side_two = side_two
@@ -8,11 +9,11 @@ def initialize(side_one, side_two, side_three)
 end 
 
 def kind
-  if side_one == side_two && side_one == side_three
+  if @side_one == @side_two && @side_one == @side_three
     return :equilateral
-  elsif side_one != side_two && side_one != side_three && side_two != side_three
+  elsif @side_one != @side_two && @side_one != @side_three && @side_two != @side_three
     return :scalene
-  elsif side_one == side_two && side_two != side_three
+  elsif @side_one == @side_two && @side_two != @side_three
     return :isosceles
   else
     raise TriangleError
