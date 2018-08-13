@@ -37,3 +37,4 @@ class TriangleError < StandardError
     "Not a Triangle message!"
 end
 end 
+end 
