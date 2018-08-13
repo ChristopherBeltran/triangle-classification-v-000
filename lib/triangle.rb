@@ -13,6 +13,8 @@ def kind
     begin
     raise TriangleError
     rescue TriangleError => error
+    puts error.message
+    
     
   elsif @side_one == @side_two && @side_one == @side_three
     return :equilateral
